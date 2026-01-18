@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package multiply;
+
+option go_package = "multiply-proto/multiplypb;multiplypb";
+
+message MultiplyRequest {
+  float number = 1;
+}
+
+message MultiplyResponse {
+  bool success = 1;
+  float message = 2;
+  int64 request_id = 3;
+  string time_stamp = 4;
+}
